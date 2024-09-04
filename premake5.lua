@@ -1,8 +1,8 @@
 project "Box2D"
     kind "StaticLib"
     language "C"
-    cdialect "C11"
-    staticruntime "off"
+    cdialect 'C11'
+    staticruntime "on"
     
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -18,11 +18,6 @@ project "Box2D"
     {
         "include",
         "src"
-    }
-
-    defines
-    {
-        "__STDC_NO_ATOMICS__"
     }
     
     filter "system:windows"
