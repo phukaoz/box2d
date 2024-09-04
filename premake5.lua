@@ -32,4 +32,5 @@ project "Box2D"
         optimize "on"
         
     filter "configurations:Dist"
-        ru "
+        runtime "Release"
+        optimize "on"
