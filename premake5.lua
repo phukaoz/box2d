@@ -19,6 +19,11 @@ project "Box2D"
         "include",
         "src"
     }
+
+    defines
+    {
+        "__STDC_NO_ATOMICS__"
+    }
     
     filter "system:windows"
         systemversion "latest"
