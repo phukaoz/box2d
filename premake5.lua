@@ -1,4 +1,4 @@
-project "box2d"
+project "Box2D"
     kind "StaticLib"
     language "C"
     cppdialect "C++20"
@@ -21,16 +21,15 @@ project "box2d"
     }
     
     filter "system:windows"
-    systemversion "latest"
+        systemversion "latest"
     
     filter "configurations:Debug"
-    runtime "Debug"
-    symbols "on"
+        runtime "Debug"
+        symbols "on"
     
     filter "configurations:Release"
-    runtime "Release"
-    optimize "on"
-    
+        runtime "Release"
+        optimize "on"
+        
     filter "configurations:Dist"
-    runtime "Release"
-    optimize "on"
+        ru "
