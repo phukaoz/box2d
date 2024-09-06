@@ -24,7 +24,10 @@ project "Box2D"
     defines {
         "BOX2D_VALIDATE"
     }
-    
+
+    filter "action:vs*"
+        buildoptions { "/experimental:c11atomics" }
+
     filter "system:windows"
         systemversion "latest"
     
